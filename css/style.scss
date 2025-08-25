@@ -24,6 +24,10 @@
     font-style: normal;
     font-display: swap;
 }
+/* Цвета */
+
+$title_color: #333;
+$main_color: rgba(51, 51, 51, 0.8);
 
 /* Обнуление стилей */
 *,
@@ -66,8 +70,7 @@ html {
 body {
     font-family: 'Nunito Sans';
     line-height: 1;
-    color: #000;
-    background-color: #000;
+    color: $main_color;
     &._lock{
         overflow: hidden;
     }
@@ -102,3 +105,64 @@ body {
     }  
 }
 
+
+/***************************************/
+
+.header {
+
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__body
+
+    &__body {
+        border-bottom: 1px solid #333;
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // .header__icon
+
+    &__icon {
+        display: none;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    // .menu__items
+
+    &__items {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    // .menu__item
+
+    &__item {
+        font-weight: 400;
+        font-size: 14px;
+        color: $title_color;
+        text-decoration: none;
+        &_btn {
+            border: 1px solid rgba(51, 51, 51, 0.4);
+            border-radius: 4px;
+            padding: 8px 24px;
+        }
+    }
+
+    // .menu__logo
+
+    &__logo {
+    }
+
+    // .menu__btn
+
+}

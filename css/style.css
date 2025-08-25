@@ -20,6 +20,7 @@
   font-style: normal;
   font-display: swap;
 }
+/* Цвета */
 /* Обнуление стилей */
 *,
 *::before,
@@ -68,8 +69,7 @@ html {
 body {
   font-family: "Nunito Sans";
   line-height: 1;
-  color: #000;
-  background-color: #000;
+  color: rgba(51, 51, 51, 0.8);
 }
 body._lock {
   overflow: hidden;
@@ -99,4 +99,44 @@ body._lock {
   margin: 0 auto;
   max-width: 1278px;
   padding: 0 15px;
+}
+
+/***************************************/
+.header__body {
+  border-bottom: 1px solid #333;
+}
+.header__icon {
+  display: none;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.menu__item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+.menu__item_btn {
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 4px;
+  padding: 8px 24px;
 }
