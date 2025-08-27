@@ -269,6 +269,8 @@ h1 {
 }
 .slider-hero {
     position: relative;
+    display: flex;
+    overflow: hidden;
 
     // .slider-hero__control
 
@@ -282,7 +284,7 @@ h1 {
 }
 .control-slider {
     position: absolute;
-    top: 14.2%;
+    top: 99px;
     display: flex;
     column-gap: 10px;
     // .control-slider__arrow-left
@@ -299,6 +301,7 @@ h1 {
 }
 .slide-hero {
     display: flex;
+    flex: 0 0 100%;
     justify-content: space-between;
     // .slide-hero__left
 
@@ -351,6 +354,7 @@ h1 {
     }
 }
 .btn {
+    display: block;
     padding: 8px 24px;
     font-weight: 400;
     font-size: 16px;
@@ -359,6 +363,7 @@ h1 {
     border-radius: 4px;
     &_red {
         background: #ffb6c1;
+        max-width: 126px;
     }
 }
 .cat {

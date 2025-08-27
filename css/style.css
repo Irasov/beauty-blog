@@ -261,10 +261,14 @@ h1 {
 /***************************************/
 .slider-hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 .control-slider {
   position: absolute;
-  top: 14.2%;
+  top: 99px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,6 +287,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -314,6 +321,7 @@ h1 {
 }
 
 .btn {
+  display: block;
   padding: 8px 24px;
   font-weight: 400;
   font-size: 16px;
@@ -323,6 +331,7 @@ h1 {
 }
 .btn_red {
   background: #ffb6c1;
+  max-width: 126px;
 }
 
 .cat {
