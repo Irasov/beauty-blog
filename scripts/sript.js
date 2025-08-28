@@ -2,13 +2,14 @@ const icon = document.querySelector(".header__icon");
 const menu = document.querySelector(".menu");
 const slider = document.querySelector(".hero__slider");
 const countSlides = slides.length;
+let slideMoveX = 0;
 const DIV = "div";
 const LINK = "a";
 const H3 = "h3";
 const H2 = "h2";
 const PARAGRAPH = "p";
 const IMG = "img";
-let currentSlide = 0;
+let currentSlide = 1;
 
 if(icon) {
     icon.addEventListener('click', () => {
@@ -17,6 +18,7 @@ if(icon) {
         icon.classList.toggle('_active');
     }); 
 }
+
 function createElement(tag, classes) {
     const  element = document.createElement(tag);
     for (let i = 0; i < classes.length; i += 1) {
@@ -26,7 +28,7 @@ function createElement(tag, classes) {
 }
 
 function createSlides() {
-    let result = [];
+    const bodySlider = createElement(DIV,["slider-hero__body"]);
     for(let i = 0; i < countSlides; i +=1) {
         const textCat = document.createTextNode(slides[i].cat);
         const textTitle = document.createTextNode(slides[i].title);
@@ -34,6 +36,7 @@ function createSlides() {
         const textBtn = "Read more";
 
         const slide = createElement(DIV, ["slider-hero__slide", "slide-hero"]);
+        slide.style.order = i + 1;
         const left = createElement(DIV, ["slide-hero__left"]);
         const cat = createElement(H3, ["slide-hero__cat", "cat"]);
         cat.appendChild(textCat);
@@ -57,14 +60,36 @@ function createSlides() {
         right.appendChild(img);
         slide.appendChild(right);
 
-        result.push(slide);
+        bodySlider.appendChild(slide);
     }
-    return result;
+    return bodySlider;
 }
 
-const slideAll = createSlides();
-for(let i = 0; i < slideAll.length; i += 1) {
-    slider.appendChild(slideAll[i]);
-}
+const bodySlider = createSlides();
+slider.appendChild(bodySlider);
 
+document.addEventListener('click', (e) => {
+    const targetElement = e.target;
+    if (targetElement.closest('.control-slider__arrow-right')) {
+      if(currentSlide < countSlides) {
+        slideMoveX -= bodySlider.clientWidth;
+        currentSlide += 1; 
+        console.log(slideMoveX);
+        bodySlider.style.transform = `translateX(${slideMoveX}px)`;
+      }
+    };
+    if (targetElement.closest('.control-slider__arrow-left')) {
+        if(currentSlide > 1) {
+            slideMoveX += bodySlider.clientWidth;
+            currentSlide -= 1; 
+            console.log(slideMoveX);
+            bodySlider.style.transform = `translateX(${slideMoveX}px)`;
+        }
+    };
+});
 
+window.addEventListener('resize', () => {
+    bodySlider.style.transform = `translateX(0px)`;
+    currentSlide = 1;
+    slideMoveX = 0;
+});
