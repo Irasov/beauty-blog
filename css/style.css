@@ -368,3 +368,11 @@ h1 {
   text-transform: uppercase;
   color: #b76e79;
 }
+
+.arrow-left._end {
+  opacity: 0.4;
+}
+
+.arrow-right._end {
+  opacity: 0.4;
+}

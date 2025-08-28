@@ -1,6 +1,8 @@
 const icon = document.querySelector(".header__icon");
 const menu = document.querySelector(".menu");
 const slider = document.querySelector(".hero__slider");
+const left = document.querySelector(".arrow-left");
+const right = document.querySelector(".arrow-right")
 const countSlides = slides.length;
 let slideMoveX = 0;
 const DIV = "div";
@@ -72,18 +74,35 @@ document.addEventListener('click', (e) => {
     const targetElement = e.target;
     if (targetElement.closest('.control-slider__arrow-right')) {
       if(currentSlide < countSlides) {
+        if(left.closest("._end")) {
+            left.classList.toggle("_end");
+        }
         slideMoveX -= bodySlider.clientWidth;
         currentSlide += 1; 
         console.log(slideMoveX);
         bodySlider.style.transform = `translateX(${slideMoveX}px)`;
       }
+      if(currentSlide === countSlides) {
+        if(!(right.closest("._end"))) {
+            right.classList.toggle("_end");
+        }
+      }
+       
     };
     if (targetElement.closest('.control-slider__arrow-left')) {
         if(currentSlide > 1) {
+            if(right.closest("._end")) {
+                right.classList.toggle("_end");
+            }
             slideMoveX += bodySlider.clientWidth;
             currentSlide -= 1; 
             console.log(slideMoveX);
             bodySlider.style.transform = `translateX(${slideMoveX}px)`;
+        }
+        if(currentSlide === 1) {
+            if(!(left.closest("._end"))) {
+                left.classList.toggle("_end");
+            }
         }
     };
 });

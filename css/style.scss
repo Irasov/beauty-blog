@@ -391,3 +391,16 @@ h1 {
     text-transform: uppercase;
     color: $category_color;
 }
+
+.arrow-left {
+    &._end{
+        opacity: .4;
+    }
+}
+
+
+.arrow-right {
+    &._end{
+        opacity: .4;
+    }
+}
