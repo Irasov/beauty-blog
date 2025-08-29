@@ -243,6 +243,7 @@ h1 {
 }
 @media (max-width: 767px) {
   .menu {
+    padding: 150px 0 0 0;
     position: absolute;
     z-index: 3;
     left: -120%;
@@ -252,9 +253,9 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
