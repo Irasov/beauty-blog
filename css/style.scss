@@ -623,6 +623,7 @@ h1 {
     &__items {
         padding: 40px 0 0 0;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         row-gap: 32px;
         column-gap: 16px;
@@ -650,6 +651,7 @@ h1 {
     // .item-trending__img
 
     &__img {
+        width: 100%;
     }
 
     // .item-trending__title
