@@ -1,312 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon.ico">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Beauty Blog</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__body">
-                    <div class="header__icon">
-                        <span></span>
-                    </div>
-                    <div class="header__menu menu">
-                        <nav class="menu__items">
-                            <a href="#" class="menu__item">Featured</a>
-                            <a href="#" class="menu__item">How-to</a>
-                            <a href="#" class="menu__item">Expert Advice</a>
-                        </nav>
-                        <a href="#" class="menu__logo">
-                            <img src="./img/logo.png" alt="logo">
-                        </a>
-                        <nav class="menu__items">
-                            <a href="#" class="menu__item">Contact</a>
-                            <a href="#" class="menu__item menu__item_btn">Subscribe</a>
-                        </nav>
-                    </div>
-                </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__adaptive">
+              <a href="#" class="menu__logo-adaptive">
+                <img src="./img/logo.png" alt="logo" />
+              </a>
+              <div class="header__icon">
+                <span></span>
+              </div>
             </div>
-        </header>
-        <main class="maimpage">
-            <section class="hero">
-                <div class="hero__container">
-                    <div class="hero__body">
-                        <h1>Beauty blog</h1>
-                        <div class="hero__slider slider-hero">
-                            <div class="slider-hero__control control-slider">
-                                <div class="control-slider__arrow-left">
-                                    <svg class="arrow-left _end" width="21" height="7" viewBox="0 0 21 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.500082 3.49996L0.146528 3.85351C0.0527592 3.75974 8.2016e-05 3.63257 8.2016e-05 3.49996C8.2016e-05 3.36735 0.0527592 3.24017 0.146528 3.14641L0.500082 3.49996ZM3.32851 0.671532L2.97496 0.317978C3.04485 0.247835 3.134 0.200024 3.23109 0.180606C3.32819 0.161189 3.42887 0.171039 3.52036 0.208909C3.61186 0.246778 3.69004 0.310962 3.74502 0.393322C3.79999 0.475683 3.82927 0.572511 3.82914 0.671531L3.32851 0.671532ZM3.32851 6.32839L3.82914 6.32839C3.82927 6.42741 3.79999 6.52424 3.74502 6.6066C3.69004 6.68896 3.61186 6.75314 3.52036 6.79101C3.42887 6.82888 3.32819 6.83873 3.23109 6.81931C3.134 6.79989 3.04485 6.75208 2.97496 6.68194L3.32851 6.32839ZM3.32851 2.99933L20.2991 2.99933L20.2991 4.00059L3.32851 4.00059V2.99933ZM0.146528 3.14641L2.97496 0.317978L3.68206 1.02509L0.853636 3.85351L0.146528 3.14641ZM3.82914 0.671531V6.32839L2.82788 6.32839L2.82788 0.671532L3.82914 0.671531ZM2.97496 6.68194L0.146528 3.85351L0.853636 3.14641L3.68206 5.97483L2.97496 6.68194Z" fill="#333333" />
-                                    </svg>
-                                </div>
-                                <div class="control-slider__arrow-right">
-                                    <svg class="arrow-right" width="21" height="7" viewBox="0 0 21 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20.0979 3.49996L20.4515 3.85351C20.5453 3.75974 20.5979 3.63257 20.5979 3.49996C20.5979 3.36735 20.5453 3.24017 20.4515 3.14641L20.0979 3.49996ZM17.2695 0.671532L17.6231 0.317978C17.5532 0.247835 17.464 0.200024 17.3669 0.180606C17.2698 0.161189 17.1692 0.171039 17.0777 0.208909C16.9862 0.246778 16.908 0.310962 16.853 0.393322C16.798 0.475683 16.7688 0.572511 16.7689 0.671531L17.2695 0.671532ZM17.2695 6.32839L16.7689 6.32839C16.7688 6.42741 16.798 6.52424 16.853 6.6066C16.908 6.68896 16.9862 6.75314 17.0777 6.79101C17.1692 6.82888 17.2698 6.83873 17.3669 6.81931C17.464 6.79989 17.5532 6.75208 17.6231 6.68194L17.2695 6.32839ZM17.2695 2.99933L0.29895 2.99933L0.29895 4.00059L17.2695 4.00059V2.99933ZM20.4515 3.14641L17.6231 0.317978L16.916 1.02509L19.7444 3.85351L20.4515 3.14641ZM16.7689 0.671531V6.32839L17.7701 6.32839L17.7701 0.671532L16.7689 0.671531ZM17.6231 6.68194L20.4515 3.85351L19.7444 3.14641L16.916 5.97483L17.6231 6.68194Z" fill="#333333" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="header__menu menu">
+              <nav class="menu__items">
+                <a href="#" class="menu__item">Featured</a>
+                <a href="#" class="menu__item">How-to</a>
+                <a href="#" class="menu__item">Expert Advice</a>
+              </nav>
+              <a href="#" class="menu__logo">
+                <img src="./img/logo.png" alt="logo" />
+              </a>
+              <nav class="menu__items">
+                <a href="#" class="menu__item">Contact</a>
+                <a href="#" class="menu__item menu__item_btn">Subscribe</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="maimpage">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__body">
+              <h1>Beauty blog</h1>
+              <div class="hero__slider slider-hero">
+                <div class="slider-hero__control control-slider">
+                  <div class="control-slider__arrow-left">
+                    <svg
+                      class="arrow-left _end"
+                      width="21"
+                      height="7"
+                      viewBox="0 0 21 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.500082 3.49996L0.146528 3.85351C0.0527592 3.75974 8.2016e-05 3.63257 8.2016e-05 3.49996C8.2016e-05 3.36735 0.0527592 3.24017 0.146528 3.14641L0.500082 3.49996ZM3.32851 0.671532L2.97496 0.317978C3.04485 0.247835 3.134 0.200024 3.23109 0.180606C3.32819 0.161189 3.42887 0.171039 3.52036 0.208909C3.61186 0.246778 3.69004 0.310962 3.74502 0.393322C3.79999 0.475683 3.82927 0.572511 3.82914 0.671531L3.32851 0.671532ZM3.32851 6.32839L3.82914 6.32839C3.82927 6.42741 3.79999 6.52424 3.74502 6.6066C3.69004 6.68896 3.61186 6.75314 3.52036 6.79101C3.42887 6.82888 3.32819 6.83873 3.23109 6.81931C3.134 6.79989 3.04485 6.75208 2.97496 6.68194L3.32851 6.32839ZM3.32851 2.99933L20.2991 2.99933L20.2991 4.00059L3.32851 4.00059V2.99933ZM0.146528 3.14641L2.97496 0.317978L3.68206 1.02509L0.853636 3.85351L0.146528 3.14641ZM3.82914 0.671531V6.32839L2.82788 6.32839L2.82788 0.671532L3.82914 0.671531ZM2.97496 6.68194L0.146528 3.85351L0.853636 3.14641L3.68206 5.97483L2.97496 6.68194Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
+                  <div class="control-slider__arrow-right">
+                    <svg
+                      class="arrow-right"
+                      width="21"
+                      height="7"
+                      viewBox="0 0 21 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.0979 3.49996L20.4515 3.85351C20.5453 3.75974 20.5979 3.63257 20.5979 3.49996C20.5979 3.36735 20.5453 3.24017 20.4515 3.14641L20.0979 3.49996ZM17.2695 0.671532L17.6231 0.317978C17.5532 0.247835 17.464 0.200024 17.3669 0.180606C17.2698 0.161189 17.1692 0.171039 17.0777 0.208909C16.9862 0.246778 16.908 0.310962 16.853 0.393322C16.798 0.475683 16.7688 0.572511 16.7689 0.671531L17.2695 0.671532ZM17.2695 6.32839L16.7689 6.32839C16.7688 6.42741 16.798 6.52424 16.853 6.6066C16.908 6.68896 16.9862 6.75314 17.0777 6.79101C17.1692 6.82888 17.2698 6.83873 17.3669 6.81931C17.464 6.79989 17.5532 6.75208 17.6231 6.68194L17.2695 6.32839ZM17.2695 2.99933L0.29895 2.99933L0.29895 4.00059L17.2695 4.00059V2.99933ZM20.4515 3.14641L17.6231 0.317978L16.916 1.02509L19.7444 3.85351L20.4515 3.14641ZM16.7689 0.671531V6.32839L17.7701 6.32839L17.7701 0.671532L16.7689 0.671531ZM17.6231 6.68194L20.4515 3.85351L19.7444 3.14641L16.916 5.97483L17.6231 6.68194Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                  </div>
                 </div>
-            </section>
-            <section class="categories">
-                <div class="categories__container">
-                    <div class="categories__body">
-                        <div class="categories__left">
-                            <div class="categories__block">
-                                <h3 class="categories__cat cat">
-                                    catigories
-                                </h3>
-                                <h2 class="categories__title title">
-                                    Dive into Beauty
-                                </h2>
-                                <a  href="#" class="categories__btn btn btn_clear">
-                                    See more
-                                </a>
-                            </div>
-                        </div>
-                        <div class="categories__right">
-                            <div class="categories__items">
-                                <div class="categories__item">
-                                    <div class="categories__image">
-                                        <img src="img/cat1.jpg" alt="beauty" class="categories__img">
-                                    </div>
-                                    <div class="categories__other">
-                                        <div class="categories__name">
-                                            Skincare
-                                        </div>
-                                        <a class="categories__link" href="#">
-                                            <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__item">
-                                    <div class="categories__image">
-                                        <img src="img/cat2.jpg" alt="beauty" class="categories__img">
-                                    </div>
-                                    <div class="categories__other">
-                                        <div class="categories__name">
-                                            Haircare
-                                        </div>
-                                        <a class="categories__link" href="#">
-                                            <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__item">
-                                    <div class="categories__image">
-                                        <img src="img/cat3.jpg" alt="beauty" class="categories__img">
-                                    </div>
-                                    <div class="categories__other">
-                                        <div class="categories__name">
-                                            Makeup
-                                        </div>
-                                        <a class="categories__link" href="#">
-                                            <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="categories">
+          <div class="categories__container">
+            <div class="categories__body">
+              <div class="categories__left">
+                <div class="categories__block">
+                  <h3 class="categories__cat cat">catigories</h3>
+                  <h2 class="categories__title title">Dive into Beauty</h2>
+                  <a href="#" class="categories__btn btn btn_clear"> See more </a>
                 </div>
-            </section>
-            <section class="trending">
-                <div class="trending__container">
-                    <div class="trending__body">
-                        <div class="trending__block">
-                            <div class="trending__text">
-                                <h3 class="trending__cat cat">Trending Topics</h3>
-                                <h2 class="trending__title title">
-                                    Stay Trendy with Our Latest Insights
-                                </h2> 
-                            </div>
-                            <a href="#" class="trending__btn btn btn_clear">
-                                See more
-                            </a>
-                        </div>
-                        <div class="trending__items">
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending1.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Seasonal Makeup Trends: Fall Edition
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Dive into the enchanting world of fall-inspired makeup trends. 
-                                    From warm hues to bold lip colors, discover the latest beauty trends that will elevate your autumn beauty routine.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending2.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Reviewing the Latest Beauty Innovations in 2023
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Stay on the cutting edge of beauty with a comprehensive review of the latest innovations in the industry. 
-                                    From skincare breakthroughs to high-tech beauty gadgets, explore what's new in 2023.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending3.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Reader Spotlight: Transformation Stories
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Witness the incredible transformations of our valued customers. 
-                                    Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending4.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Inside BB: Product Development Journey
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Take an exclusive behind-the-scenes look at the creation of beauty products. 
-                                    Learn about commitment to quality, innovation, and the meticulous process that goes into each product.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending5.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Exclusive Interview with Jenna Milhouse @missyb
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Gain insights from a renowned beauty influencer or expert in an exclusive interview. 
-                                    Discover their favorite beauty tips, product recommendations, and the secrets behind their success in the industry.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="trending__item item-trending">
-                                <div class="item-trending__image">
-                                    <img src="img/trending6.jpg" alt="trending" class="item-trending__img">
-                                </div>
-                                <h3 class="item-trending__title">
-                                    Step-by-Step Guide: Achieving the Perfect Smokey Eye
-                                </h3>
-                                <p class="item-trending__subtitle">
-                                    Witness the incredible transformations of our valued customers. 
-                                    Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.
-                                </p>
-                                <div class="item-trending__footer">
-                                    <div class="item-trending__text">
-                                        <div class="item-trending__autor">
-                                            Jane Doe
-                                        </div>
-                                        <div class="item-trending__minute">
-                                            5min read
-                                        </div>
-                                    </div>
-                                    <a href="#" class="item-trending__link">
-                                        <svg class="categories__arrow" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z" fill="#333333" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+              <div class="categories__right">
+                <div class="categories__items">
+                  <div class="categories__item">
+                    <div class="categories__image">
+                      <img src="img/cat1.jpg" alt="beauty" class="categories__img" />
                     </div>
+                    <div class="categories__other">
+                      <div class="categories__name">Skincare</div>
+                      <a class="categories__link" href="#">
+                        <svg
+                          class="categories__arrow"
+                          width="21"
+                          height="8"
+                          viewBox="0 0 21 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                            fill="#333333"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="categories__item">
+                    <div class="categories__image">
+                      <img src="img/cat2.jpg" alt="beauty" class="categories__img" />
+                    </div>
+                    <div class="categories__other">
+                      <div class="categories__name">Haircare</div>
+                      <a class="categories__link" href="#">
+                        <svg
+                          class="categories__arrow"
+                          width="21"
+                          height="8"
+                          viewBox="0 0 21 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                            fill="#333333"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="categories__item">
+                    <div class="categories__image">
+                      <img src="img/cat3.jpg" alt="beauty" class="categories__img" />
+                    </div>
+                    <div class="categories__other">
+                      <div class="categories__name">Makeup</div>
+                      <a class="categories__link" href="#">
+                        <svg
+                          class="categories__arrow"
+                          width="21"
+                          height="8"
+                          viewBox="0 0 21 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                            fill="#333333"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer"></footer>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="trending">
+          <div class="trending__container">
+            <div class="trending__body">
+              <div class="trending__block">
+                <div class="trending__text">
+                  <h3 class="trending__cat cat">Trending Topics</h3>
+                  <h2 class="trending__title title">Stay Trendy with Our Latest Insights</h2>
+                </div>
+                <a href="#" class="trending__btn btn btn_clear"> See more </a>
+              </div>
+              <div class="trending__items">
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending1.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">Seasonal Makeup Trends: Fall Edition</h3>
+                  <p class="item-trending__subtitle">
+                    Dive into the enchanting world of fall-inspired makeup trends. From warm hues to
+                    bold lip colors, discover the latest beauty trends that will elevate your autumn
+                    beauty routine.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending2.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">
+                    Reviewing the Latest Beauty Innovations in 2023
+                  </h3>
+                  <p class="item-trending__subtitle">
+                    Stay on the cutting edge of beauty with a comprehensive review of the latest
+                    innovations in the industry. From skincare breakthroughs to high-tech beauty
+                    gadgets, explore what's new in 2023.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending3.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">Reader Spotlight: Transformation Stories</h3>
+                  <p class="item-trending__subtitle">
+                    Witness the incredible transformations of our valued customers. Read real
+                    stories of beauty journeys, complete with before-and-after photos, and be
+                    inspired by the power of self-care.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending4.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">Inside BB: Product Development Journey</h3>
+                  <p class="item-trending__subtitle">
+                    Take an exclusive behind-the-scenes look at the creation of beauty products.
+                    Learn about commitment to quality, innovation, and the meticulous process that
+                    goes into each product.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending5.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">
+                    Exclusive Interview with Jenna Milhouse @missyb
+                  </h3>
+                  <p class="item-trending__subtitle">
+                    Gain insights from a renowned beauty influencer or expert in an exclusive
+                    interview. Discover their favorite beauty tips, product recommendations, and the
+                    secrets behind their success in the industry.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="trending__item item-trending">
+                  <div class="item-trending__image">
+                    <img src="img/trending6.jpg" alt="trending" class="item-trending__img" />
+                  </div>
+                  <h3 class="item-trending__title">
+                    Step-by-Step Guide: Achieving the Perfect Smokey Eye
+                  </h3>
+                  <p class="item-trending__subtitle">
+                    Witness the incredible transformations of our valued customers. Read real
+                    stories of beauty journeys, complete with before-and-after photos, and be
+                    inspired by the power of self-care.
+                  </p>
+                  <div class="item-trending__footer">
+                    <div class="item-trending__text">
+                      <div class="item-trending__autor">Jane Doe</div>
+                      <div class="item-trending__minute">5min read</div>
+                    </div>
+                    <a href="#" class="item-trending__link">
+                      <svg
+                        class="categories__arrow"
+                        width="21"
+                        height="8"
+                        viewBox="0 0 21 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.0981 3.99996L20.4516 4.35351C20.5454 4.25974 20.5981 4.13257 20.5981 3.99996C20.5981 3.86735 20.5454 3.74017 20.4516 3.64641L20.0981 3.99996ZM17.2696 1.17153L17.6232 0.817978C17.5533 0.747835 17.4641 0.700024 17.3671 0.680606C17.27 0.661189 17.1693 0.671039 17.0778 0.708909C16.9863 0.746778 16.9081 0.810962 16.8531 0.893322C16.7982 0.975683 16.7689 1.07251 16.769 1.17153L17.2696 1.17153ZM17.2696 6.82839L16.769 6.82839C16.7689 6.92741 16.7982 7.02424 16.8531 7.1066C16.9081 7.18896 16.9863 7.25314 17.0778 7.29101C17.1693 7.32888 17.27 7.33873 17.3671 7.31931C17.4641 7.29989 17.5533 7.25208 17.6232 7.18194L17.2696 6.82839ZM17.2696 3.49933L0.299072 3.49933L0.299072 4.50059L17.2696 4.50059V3.49933ZM20.4516 3.64641L17.6232 0.817978L16.9161 1.52509L19.7445 4.35351L20.4516 3.64641ZM16.769 1.17153V6.82839L17.7703 6.82839L17.7703 1.17153L16.769 1.17153ZM17.6232 7.18194L20.4516 4.35351L19.7445 3.64641L16.9161 6.47483L17.6232 7.18194Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
     </div>
     <script src="scripts/slides.js"></script>
     <script src="scripts/sript.js"></script>
-</body>
+  </body>
 </html>
