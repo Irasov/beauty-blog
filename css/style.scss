@@ -380,8 +380,8 @@ h1 {
 
     // .slide-hero__right
 
-    &__right {     
-        max-width: 600px;
+    &__right {   
+        padding: 0 9px 0 0;
         @media(max-width: 1099.98px) {
             display: none;
         }
