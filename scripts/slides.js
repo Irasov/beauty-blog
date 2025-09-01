@@ -9,7 +9,7 @@ let slides = [
     link: '#',
   },
   {
-    img: 'img/skincare2.jpg',
+    img: 'img/scincare2.jpg',
     alt: 'scincare',
     cat: 'FEATURED',
     title: '15 Must-Have Skincare Products for Radiant Skin',
@@ -18,7 +18,7 @@ let slides = [
     link: '#',
   },
   {
-    img: 'img/skincare3.jpg',
+    img: 'img/scincare3.jpg',
     alt: 'scincare',
     cat: 'FEATURED',
     title: '20 Must-Have Skincare Products for Radiant Skin',

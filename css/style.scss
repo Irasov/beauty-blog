@@ -603,6 +603,7 @@ h1 {
 
     &__body {
         padding: 80px 0;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.4);
     }
 
     // .trending__block
@@ -744,4 +745,112 @@ h1 {
 
     &__arrow {
     }
+}
+
+/***************************************/
+
+.video {
+
+		// .video__container
+
+		&__container {
+		}
+
+		// .video__body
+
+		&__body {
+		}
+
+		// .video__header
+
+		&__header {
+		}
+
+		// .video__about
+
+		&__about {
+		}
+
+		// .video__cat
+
+		&__cat {
+		}
+
+		// .video__title
+
+		&__title {
+		}
+
+		// .video__control
+
+		&__control {
+		}
+
+		// .video__left
+
+		&__left {
+		}
+
+		// .video__right
+
+		&__right {
+		}
+
+		// .video__main
+
+		&__main {
+		}
+
+		// .video__player
+
+		&__player {
+		}
+
+		// .video__list
+
+		&__list {
+		}
+
+		// .video__items
+
+		&__items {
+		}
+
+		// .video__item
+
+		&__item {
+		}
+}
+
+.item-video {
+
+		// .item-video__title
+
+		&__title {
+		}
+
+		// .item-video__footer
+
+		&__footer {
+		}
+
+		// .item-video__text
+
+		&__text {
+		}
+
+		// .item-video__cat
+
+		&__cat {
+		}
+
+		// .item-video__time
+
+		&__time {
+		}
+
+		// .item-video__play
+
+		&__play {
+		}
 }
