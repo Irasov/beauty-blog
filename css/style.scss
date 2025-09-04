@@ -818,7 +818,9 @@ h1 {
         &__box {
             flex: 0 1 827px;
             max-width: 827px;
-            align-self: center;
+            @media(max-width: 1265.98px) {
+                align-self: center;
+            }
         }
 
 	    // .video__player
@@ -831,6 +833,10 @@ h1 {
 		// .video__list
 
 		&__list {
+            max-width: 405px;
+            @media(max-width: 1265.98px) {
+                max-width: none;
+            }
 		}
 
 		// .video__items

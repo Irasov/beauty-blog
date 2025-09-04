@@ -698,12 +698,24 @@ h1 {
       -ms-flex: 0 1 827px;
           flex: 0 1 827px;
   max-width: 827px;
-  -ms-flex-item-align: center;
-      align-self: center;
+}
+@media (max-width: 1265.98px) {
+  .video__box {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 .video__player {
   width: 100%;
   cursor: pointer;
+}
+.video__list {
+  max-width: 405px;
+}
+@media (max-width: 1265.98px) {
+  .video__list {
+    max-width: none;
+  }
 }
 .video__items {
   display: -webkit-box;
