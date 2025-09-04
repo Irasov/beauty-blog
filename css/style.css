@@ -655,6 +655,7 @@ h1 {
 /***************************************/
 .video__body {
   padding: 80px 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
 }
 .video__header {
   margin: 0 0 40px 0;
@@ -701,6 +702,9 @@ h1 {
 }
 @media (max-width: 1265.98px) {
   .video__box {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -763,4 +767,88 @@ h1 {
 }
 .item-video__play {
   cursor: pointer;
+}
+
+/***************************************/
+.subscribe__body {
+  padding: 80px 0 64px 0;
+}
+.subscribe__content {
+  padding: 12px 12px 12px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 4px;
+}
+@media (max-width: 1265.98px) {
+  .subscribe__content {
+    padding: 12px 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 20px;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.subscribe__left {
+  padding: 120px 0 0 0;
+}
+@media (max-width: 1265.98px) {
+  .subscribe__left {
+    padding: 0px 0px;
+  }
+}
+.subscribe__cat {
+  margin: 0 0 8px 0;
+}
+.subscribe__title {
+  margin: 0 0 8px 0;
+  max-width: 455px;
+}
+.subscribe__subtitle {
+  margin: 0 0 48px 0;
+  max-width: 455px;
+}
+.subscribe__send {
+  padding: 6px 4px 6px 16px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-radius: 4px;
+}
+.subscribe__email {
+  width: 100%;
+  padding: 6px 6px 6px 0;
+}
+.subscribe__email:focus {
+  outline: none;
+}
+.subscribe__btn {
+  border-radius: 4px;
+  padding: 8px 24px;
+  background: #ffb6c1;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.subscribe__btn:hover {
+  color: #fff;
+}
+.subscribe__img {
+  width: 100%;
 }

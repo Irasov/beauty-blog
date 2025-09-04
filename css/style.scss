@@ -760,6 +760,7 @@ h1 {
 
 		&__body {
             padding: 80px 0;
+            border-bottom: 1px solid rgba(51, 51, 51, 0.4);
 		}
 
 		// .video__header
@@ -819,6 +820,7 @@ h1 {
             flex: 0 1 827px;
             max-width: 827px;
             @media(max-width: 1265.98px) {
+                flex: none;
                 align-self: center;
             }
         }
@@ -900,3 +902,112 @@ h1 {
             cursor: pointer;
 		}
 }
+
+
+/***************************************/
+
+.subscribe {
+
+		// .subscribe__container
+
+		&__container {
+		}
+
+		// .subscribe__body
+
+		&__body {
+            padding: 80px 0 64px 0;
+		}
+
+		// .subscribe__content
+
+		&__content {
+            padding: 12px 12px 12px 64px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgba(51, 51, 51, 0.4);
+            border-radius: 4px;
+            @media(max-width: 1265.98px) {
+                padding: 12px 12px;
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                justify-content: none;
+                align-items: center;
+            }
+		}
+
+		// .subscribe__left
+
+		&__left {
+            padding: 120px 0 0 0;
+            @media(max-width: 1265.98px) {
+                padding: 0px 0px;
+            }
+		}
+
+		// .subscribe__cat
+
+		&__cat {
+            margin: 0 0 8px 0;
+		}
+
+		// .subscribe__title
+
+		&__title {
+            margin: 0 0 8px 0;
+            max-width: 455px;
+		}
+
+		// .subscribe__subtitle
+
+		&__subtitle {
+            margin: 0 0 48px 0;
+            max-width: 455px;
+		}
+
+		// .subscribe__send
+
+		&__send {
+            padding: 6px 4px 6px 16px;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgba(51, 51, 51, 0.4);
+            border-radius: 4px;
+		}
+
+		// .subscribe__email
+
+		&__email {
+            width: 100%;
+            padding: 6px 6px 6px 0;
+            &:focus {
+                outline: none;
+            }
+		}
+
+		// .subscribe__btn
+
+		&__btn {
+            border-radius: 4px;
+            padding: 8px 24px;
+            background: #ffb6c1;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color:#fff
+            }
+		}
+
+		// .subscribe__right
+
+		&__right {
+		}
+
+		// .subscribe__img
+
+		&__img {
+            width: 100%;
+		}
+}
+
