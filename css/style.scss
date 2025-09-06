@@ -1029,7 +1029,9 @@ h1 {
         display: flex;
         justify-content: space-between;
         @media(max-width:560px) {
-            
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
         }
     }
 
