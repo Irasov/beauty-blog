@@ -97,7 +97,6 @@ document.addEventListener('click', (e) => {
       }
       slideMoveX += bodySlider.clientWidth;
       currentSlide -= 1;
-      console.log(slideMoveX);
       bodySlider.style.transform = `translateX(${slideMoveX}px)`;
     }
     if (currentSlide === 1) {
@@ -112,4 +111,10 @@ window.addEventListener('resize', () => {
   bodySlider.style.transform = `translateX(0px)`;
   currentSlide = 1;
   slideMoveX = 0;
+  if (right.closest('._end')) {
+    right.classList.toggle('_end');
+  }
+  if (!left.closest('._end')) {
+    left.classList.toggle('_end');
+  }
 });
