@@ -850,20 +850,26 @@ h1 {
             display: flex;
             flex-direction: column;
             row-gap: 16px;
+            transition: all 0.3s ease 0s;
 		}
 
 		// .video__item
 
 		&__item {
-            border: 1px solid rgba(51, 51, 51, 0.16);
-            border-radius: 2px;
-            padding: 16px;
+
 		}
 }
 
 .item-video {
 		// .item-video__title
-
+        border: 1px solid rgba(51, 51, 51, 0.16);
+        border-radius: 2px;
+        padding: 16px;
+        color: rgba(51, 51, 51, 0.6); 
+        &_act {
+            border: 1px solid rgba(51, 51, 51, 0.4);
+            color: $title_color; 
+        } 
 		&__title {
             padding: 0 0 16px 0;
             font-weight: 400;
@@ -907,6 +913,13 @@ h1 {
 		&__play {
             cursor: pointer;
 		}
+}
+
+.play {
+    fill-opacity: 0.6;
+    &_act {
+        fill-opacity: 1;
+    }
 }
 
 

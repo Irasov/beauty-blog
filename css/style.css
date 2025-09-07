@@ -737,13 +737,19 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-.video__item {
+.item-video {
   border: 1px solid rgba(51, 51, 51, 0.16);
   border-radius: 2px;
   padding: 16px;
+  color: rgba(51, 51, 51, 0.6);
 }
-
+.item-video_act {
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  color: #333;
+}
 .item-video__title {
   padding: 0 0 16px 0;
   font-weight: 400;
@@ -779,6 +785,13 @@ h1 {
 }
 .item-video__play {
   cursor: pointer;
+}
+
+.play {
+  fill-opacity: 0.6;
+}
+.play_act {
+  fill-opacity: 1;
 }
 
 /***************************************/

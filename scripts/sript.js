@@ -4,17 +4,25 @@ const menu = document.querySelector('.menu');
 const slider = document.querySelector('.hero__slider');
 const left = document.querySelector('.arrow-left');
 const right = document.querySelector('.arrow-right');
+const up = document.querySelector('.up');
+const down = document.querySelector('.down');
 const countSlides = slides.length;
 const videoList = document.querySelector('.video__list');
 const videoItems = document.querySelector('.video__items');
 const itemsVideo = document.querySelectorAll('.item-video');
+const player = document.querySelector('.video__player');
+player.setAttribute('src', videos[0]);
 let slideMoveX = 0;
+let listVideosMove = 0;
+const moveVideo = 2;
+let currentMoveVideo = 0;
 const DIV = 'div';
 const LINK = 'a';
 const H3 = 'h3';
 const H2 = 'h2';
 const PARAGRAPH = 'p';
 const IMG = 'img';
+const rowGap = 16;
 let currentSlide = 1;
 videoList.style.maxHeight = `${sizeBlockVideo()}px`;
 if (icon) {
@@ -108,7 +116,83 @@ document.addEventListener('click', (e) => {
       }
     }
   }
+  if (targetElement.closest('.up')) {
+    if (currentMoveVideo < 2) {
+      listVideosMove -= itemsVideo[1].offsetHeight + rowGap;
+      console.log(listVideosMove);
+      videoItems.style.transform = `translateY(${listVideosMove}px)`;
+      currentMoveVideo += 1;
+    }
+  }
+  if (targetElement.closest('.down')) {
+    if (currentMoveVideo > 0) {
+      listVideosMove += itemsVideo[1].offsetHeight + rowGap;
+      videoItems.style.transform = `translateY(${listVideosMove}px)`;
+      currentMoveVideo -= 1;
+    }
+  }
+  if (targetElement.closest('.play__1')) {
+    clearClass();
+    toggleClass('.item-video_1');
+    targetElement.classList.add('play_act');
+    clickPlayer(0);
+  }
+  if (targetElement.closest('.play__2')) {
+    clearClass();
+    toggleClass('.item-video_2');
+    targetElement.classList.add('play_act');
+    clickPlayer(1);
+  }
+  if (targetElement.closest('.play__3')) {
+    clearClass();
+    toggleClass('.item-video_3');
+    targetElement.classList.add('play_act');
+    clickPlayer(2);
+  }
+  if (targetElement.closest('.play__4')) {
+    clearClass();
+    toggleClass('.item-video_4');
+    targetElement.classList.add('play_act');
+    clickPlayer(3);
+  }
+  if (targetElement.closest('.play__5')) {
+    clearClass();
+    toggleClass('.item-video_5');
+    targetElement.classList.add('play_act');
+    clickPlayer(4);
+  }
+  if (targetElement.closest('.video__player')) {
+    player.play();
+  }
 });
+
+function clickPlayer(index) {
+  player.setAttribute('src', videos[index]);
+  player.setAttribute('controls', '');
+  player.play();
+}
+
+function toggleClass(str) {
+  let item = document.querySelector(str);
+  if (!item.closest('.item-video_act')) {
+    item.classList.add('item-video_act');
+  }
+}
+
+function clearClass() {
+  const items_block = document.querySelectorAll('.video__item');
+  const items_play = document.querySelectorAll('.play');
+  if (items_block) {
+    for (let i = 0; i < items_block.length; i += 1) {
+      items_block[i].classList.remove('item-video_act');
+    }
+  }
+  if (items_play) {
+    for (let i = 0; i < items_play.length; i += 1) {
+      items_play[i].classList.remove('play_act');
+    }
+  }
+}
 
 window.addEventListener('resize', () => {
   bodySlider.style.transform = `translateX(0px)`;
@@ -121,13 +205,23 @@ window.addEventListener('resize', () => {
     left.classList.toggle('_end');
   }
   videoList.style.maxHeight = `${sizeBlockVideo()}px`;
+  currentMoveVideo = 0;
+  listVideosMove = 0;
+  videoItems.style.transform = `translateY(0px)`;
+  clearClass();
+  const itemB = document.querySelector('.item-video_1');
+  itemB.classList.add('item-video_act');
+  const itemP = document.querySelector('.play__1');
+  itemP.classList.add('play_act');
+  player.setAttribute('src', videos[0]);
+  player.pause();
+  player.removeAttribute('controls');
 });
 
 function sizeBlockVideo() {
-  let size = 38;
+  let size = rowGap * 2;
   for (let i = 0; i < 3; i += 1) {
-    console.log(itemsVideo[i].clientHeight);
-    size += itemsVideo[i].clientHeight;
+    size += itemsVideo[i].offsetHeight;
   }
   return size;
 }
