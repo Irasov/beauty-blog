@@ -1,4 +1,4 @@
-let slides = [
+const slides = [
   {
     img: 'img/skincare.webp',
     alt: 'scincare',
@@ -27,3 +27,5 @@ let slides = [
     link: '#',
   },
 ];
+
+const videos = ['img/v1.mp4', 'img/v2.mp4', 'img/v3.mp4', 'img/v4.mp4', 'img/v5.mp4'];

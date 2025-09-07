@@ -5,6 +5,9 @@ const slider = document.querySelector('.hero__slider');
 const left = document.querySelector('.arrow-left');
 const right = document.querySelector('.arrow-right');
 const countSlides = slides.length;
+const videoList = document.querySelector('.video__list');
+const videoItems = document.querySelector('.video__items');
+const itemsVideo = document.querySelectorAll('.item-video');
 let slideMoveX = 0;
 const DIV = 'div';
 const LINK = 'a';
@@ -13,7 +16,7 @@ const H2 = 'h2';
 const PARAGRAPH = 'p';
 const IMG = 'img';
 let currentSlide = 1;
-
+videoList.style.maxHeight = `${sizeBlockVideo()}px`;
 if (icon) {
   icon.addEventListener('click', () => {
     document.body.classList.toggle('_lock');
@@ -117,4 +120,14 @@ window.addEventListener('resize', () => {
   if (!left.closest('._end')) {
     left.classList.toggle('_end');
   }
+  videoList.style.maxHeight = `${sizeBlockVideo()}px`;
 });
+
+function sizeBlockVideo() {
+  let size = 38;
+  for (let i = 0; i < 3; i += 1) {
+    console.log(itemsVideo[i].clientHeight);
+    size += itemsVideo[i].clientHeight;
+  }
+  return size;
+}

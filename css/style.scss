@@ -838,6 +838,7 @@ h1 {
 
 		&__list {
             max-width: 405px;
+            overflow: hidden;
             @media(max-width: 1265.98px) {
                 max-width: none;
             }
