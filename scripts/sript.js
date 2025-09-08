@@ -85,6 +85,7 @@ slider.appendChild(bodySlider);
 
 document.addEventListener('click', (e) => {
   const targetElement = e.target;
+  console.log(targetElement);
   if (targetElement.closest('.control-slider__arrow-right')) {
     if (currentSlide < countSlides) {
       if (left.closest('._end')) {
@@ -131,34 +132,34 @@ document.addEventListener('click', (e) => {
       currentMoveVideo -= 1;
     }
   }
-  if (targetElement.closest('.play__1')) {
+  if (targetElement.closest('.p1')) {
     clearClass();
     toggleClass('.item-video_1');
-    targetElement.classList.add('play_act');
+    document.querySelector('.play__1').classList.add('play_act');
     clickPlayer(0);
   }
-  if (targetElement.closest('.play__2')) {
+  if (targetElement.closest('.p2')) {
     clearClass();
     toggleClass('.item-video_2');
-    targetElement.classList.add('play_act');
+    document.querySelector('.play__2').classList.add('play_act');
     clickPlayer(1);
   }
-  if (targetElement.closest('.play__3')) {
+  if (targetElement.closest('.p3')) {
     clearClass();
     toggleClass('.item-video_3');
-    targetElement.classList.add('play_act');
+    document.querySelector('.play__3').classList.add('play_act');
     clickPlayer(2);
   }
-  if (targetElement.closest('.play__4')) {
+  if (targetElement.closest('.p4')) {
     clearClass();
     toggleClass('.item-video_4');
-    targetElement.classList.add('play_act');
+    document.querySelector('.play__4').classList.add('play_act');
     clickPlayer(3);
   }
-  if (targetElement.closest('.play__5')) {
+  if (targetElement.closest('.p5')) {
     clearClass();
     toggleClass('.item-video_5');
-    targetElement.classList.add('play_act');
+    document.querySelector('.play__5').classList.add('play_act');
     clickPlayer(4);
   }
   if (targetElement.closest('.video__player')) {
