@@ -170,6 +170,14 @@ document.addEventListener('click', (e) => {
   if (targetElement.closest('.video__player')) {
     player.play();
   }
+  if (targetElement.closest('.menu__item_btn')) {
+    if (document.body.closest('._lock')) {
+      document.body.classList.toggle('_lock');
+      menu.classList.toggle('_active');
+      icon.classList.toggle('_active');
+      logo.classList.toggle('_active');
+    }
+  }
 });
 
 function clickPlayer(index) {
