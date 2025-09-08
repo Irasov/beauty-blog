@@ -168,6 +168,7 @@ document.addEventListener('click', (e) => {
     clickPlayer(4);
   }
   if (targetElement.closest('.video__player')) {
+    player.setAttribute('controls', '');
     player.play();
   }
   if (targetElement.closest('.menu__item_btn')) {
