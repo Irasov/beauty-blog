@@ -85,7 +85,6 @@ slider.appendChild(bodySlider);
 
 document.addEventListener('click', (e) => {
   const targetElement = e.target;
-  console.log(targetElement);
   if (targetElement.closest('.control-slider__arrow-right')) {
     if (currentSlide < countSlides) {
       if (left.closest('._end')) {
@@ -93,7 +92,6 @@ document.addEventListener('click', (e) => {
       }
       slideMoveX -= bodySlider.clientWidth;
       currentSlide += 1;
-      console.log(slideMoveX);
       bodySlider.style.transform = `translateX(${slideMoveX}px)`;
     }
     if (currentSlide === countSlides) {
@@ -117,19 +115,26 @@ document.addEventListener('click', (e) => {
       }
     }
   }
-  if (targetElement.closest('.up')) {
+  if (targetElement.closest('.video__up')) {
     if (currentMoveVideo < 2) {
       listVideosMove -= itemsVideo[1].offsetHeight + rowGap;
-      console.log(listVideosMove);
       videoItems.style.transform = `translateY(${listVideosMove}px)`;
       currentMoveVideo += 1;
+      down.classList.remove('_dis');
+    }
+    if (currentMoveVideo === 2) {
+      up.classList.add('_dis');
     }
   }
-  if (targetElement.closest('.down')) {
+  if (targetElement.closest('.video__down')) {
     if (currentMoveVideo > 0) {
       listVideosMove += itemsVideo[1].offsetHeight + rowGap;
       videoItems.style.transform = `translateY(${listVideosMove}px)`;
       currentMoveVideo -= 1;
+      up.classList.remove('_dis');
+    }
+    if (currentMoveVideo === 0) {
+      down.classList.add('_dis');
     }
   }
   if (targetElement.closest('.p1')) {

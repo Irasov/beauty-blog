@@ -794,6 +794,10 @@ h1 {
   fill-opacity: 1;
 }
 
+._dis {
+  opacity: 0.5;
+}
+
 /***************************************/
 .subscribe__body {
   padding: 80px 0 64px 0;
